@@ -1,0 +1,461 @@
+/* Edurne Presa Angulo - DWEC04 - TE1 */
+
+/* INDICE
+ *
+ * I. ESTILOS COMUNES
+ * II. FICHAS DE LIBRO
+ * III. HEADER
+ * IV. NAVBAR
+ * V. MAIN
+ * VI. FOOTER
+ * VII. INDEX
+ * VIII. EXPLORA
+ * IX. ESTANTERIA
+ * X. PAGINA LIBRO
+ */
+
+ 
+/* -------------- I. ESTILOS COMUNES ---------- */
+body {
+    background-color: rgb(55, 11, 11);
+    font-family: 'Montserrat', sans-serif;
+} 
+#contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header,
+nav,
+footer,
+main {
+    width:75vw;
+}
+h2 {
+    margin: 5rem 7rem 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+h3 {
+    margin: 2rem 0 0 2rem;
+}
+.foto_pie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    width: 5%;
+    padding: 3rem;
+}
+
+/* ----------- II. FICHAS DE LIBRO --------------- */
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.ficha_libro {
+    border: 1 px solid black; 
+    padding: 1rem;
+    margin: 4rem 2rem 0.5rem 2rem;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem 0;
+}
+.portada_libro {
+    max-width: 20vw;
+    max-height: 40vh;
+    min-height: 35vh
+}
+.ficha_libro p {
+    margin-top: 0.5rem;
+}
+.icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+.icons i {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.rojo {
+    color: rgb(22, 5, 5);
+}
+.blanco {
+    color: rgb(200 200 200);
+}
+
+
+/* -------------- III. HEADER ---------- */
+header {
+    height: 20vh;
+    background-color: rgb(235, 235, 235, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.titulo:link,
+.titulo:visited,
+.titulo:hover, 
+.titulo:active {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-size: 4rem;
+}
+
+
+/* -------------- IV. NAVBAR ---------- */
+nav {
+    height: 10vh;
+    background-color: rgb(235, 235, 235, 0.9);
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+nav a:link,
+nav a:visited,
+nav a:hover, 
+nav a:active {
+    text-decoration: none;
+    color: black
+}
+nav a:hover, 
+.current {
+    font-weight:900;
+    background-color:  rgb(235, 235, 235, 0.7);
+}
+.logo {
+    height: 20vh;
+}
+nav i  {
+    margin-right: 0.5rem;
+}
+nav .navbar_item {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+nav .navbar_item:hover {
+    background-color:  rgb(235, 235, 235, 0.7);
+}
+
+/* -------------- V. MAIN ---------- */
+main {
+    background-color: rgba(235, 235, 235);
+    min-height: 66vh;
+}
+
+
+/* -------------- VI. FOOTER ---------- */
+footer {
+    min-height: 4vh;
+    background-color: rgb(235, 235, 235, 0.85);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+footer a {
+    margin-right: 1rem;
+}
+footer a:link,
+footer a:visited,
+footer a:hover, 
+footer a:active {
+    text-decoration: none;
+    color: black
+}
+footer p {
+    font-size: 0.8rem;
+}
+
+
+/* ------------- VII. INDEX ---------- */
+#img_cabecera {
+    width: 100%;
+    border-top: grey solid 0.1rem;
+    border-bottom: grey solid 0.1rem;
+}
+#titulo_index {
+    font-size: 3.5rem;
+}
+.titulares {
+    margin-left: 7rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    word-spacing: 0.4rem;    
+}
+.titulares:first-of-type {
+    margin: 1rem 7rem;
+}
+.titulares a:link,
+.titulares a:visited,
+.titulares a:hover,
+.titulares a:active {
+    text-decoration: none;
+    color: black;
+
+}
+#index_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3.5rem;
+    font-size: 1.6rem;
+}
+#index_estanteria, 
+#index_deseados, 
+#index_favoritos,
+#index_explorar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10rem;
+}
+#index_estanteria p,
+#index_deseados p,
+#index_favoritos p
+#index_explorar p {
+    margin: 1rem 3rem;
+}
+#index_estanteria i,
+#index_deseados i,
+#index_favoritos i,
+#index_explorar i {
+    font-size: 5rem;
+    margin: 2rem;
+}
+.subtitulo {
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+
+/* ------------- VIII. EXPLORA ----------*/ 
+#cabecera_explora {
+    width: 100%;
+    border-top: grey solid 0.1rem;
+    border-bottom: grey solid 0.1rem;
+}
+
+.mostrar {
+    display: none;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+#buscar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3rem 1rem;
+}
+#buscar button,
+#buscar input {    
+    font-size: 1.2rem;
+    background-color: white;
+    border: 0.05rem solid grey;
+    padding: 0.5rem;
+}
+#buscar input {
+    width: 50%;
+}
+#buscar button {
+    width: 10%;
+}
+#buscar p {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+#resultados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+}
+
+
+/* -------------- IX. ESTANTERIA -------------- */
+#filtro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4rem 6rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+#filtro p,
+#filtro button {
+    font-size: 1.1rem;
+}
+#filtro p {
+    padding-right: 1rem;
+}
+#filtro button,
+.filtro {
+    padding: 0.3rem;    
+}
+#filtro button {
+    background-color: white; /* Color de fondo por defecto */
+    border: grey solid 0.1rem;
+    border-radius: 0.4rem;
+}
+#filtro button.activo {
+    background-color: rgb(200, 200, 200); 
+    color: black; 
+    font-weight: 600; 
+}
+
+
+/* ------------- X. PAGINA LIBRO ------------- */
+#info_libro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.pagina_libro {
+    background-color: white;
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+.general {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 80%;
+}
+.general img {
+    padding-left: 2rem;
+}
+.general_texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 2rem;
+}
+.sinopsis {
+    padding: 2rem 2.5rem;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+.pagina_libro .icons {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+} 
+.pagina_libro .icons i {
+    font-size: 2rem;
+}
+.titulo_libro {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.general_texto p {
+    margin: 1rem 1rem;
+
+}
